@@ -1,3 +1,5 @@
+use itertools::Itertools;
+
 /// 多次元の vector を作成します
 ///
 /// Examples
@@ -48,4 +50,15 @@ macro_rules! No {
     () => {
         println!("No");
     };
+}
+
+
+pub trait SetMinMax { fn setmin(&mut self, v: Self) -> bool; fn setmax(&mut self, v: Self) -> bool; }
+impl<T> SetMinMax for T where T: PartialOrd { 
+    fn setmin(&mut self, v: T) -> bool { *self > v && { *self = v; true } }
+    fn setmax(&mut self, v: T) -> bool { *self < v && { *self = v; true } }
+}
+pub trait PrintVec{ fn println(&self); }
+impl<T> PrintVec for Vec<T> where T: std::fmt::Display{
+    fn println(&self){ println!("{}",self.iter().join(" ")); }
 }

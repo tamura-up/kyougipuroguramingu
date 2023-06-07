@@ -4,7 +4,8 @@
 
 cargo-equip で使用することを想定
 
-[usage](https://github.com/qryxip/cargo-equip#usage) の 6. のようにクレートに分割することもできるようだが、とりあえずは src 直下に溜めていく
+## TODO
+[usage](https://github.com/qryxip/cargo-equip#usage) の 6. のようにクレートに分割するようにしているが、作り方が正しいのかよくわかってない
 
 ### cargo-equip links
 
