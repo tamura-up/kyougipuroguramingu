@@ -4,8 +4,16 @@
 
 cargo-equip で使用することを想定
 
+
 ## TODO
 [usage](https://github.com/qryxip/cargo-equip#usage) の 6. のようにクレートに分割するようにしているが、作り方が正しいのかよくわかってない
+
+### クレート作るときのメモ
+
+クレートのライセンス記載が必要
+
+- LICENSE ファイルを配置
+- `Cargo.toml` に `licence=MIT` 追加
 
 ### cargo-equip links
 
